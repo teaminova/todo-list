@@ -28,7 +28,7 @@ jobs:
       - name: Build and push Docker image
         run: |
           docker build -t teaminova/todo-list:latest .
-          docker tag teaminova/todo-list:latest yourusername/todo-list:${{ github.sha }}
+          docker tag teaminova/todo-list:latest teaminova/todo-list:${{ github.sha }}
           docker push teaminova/todo-list:latest
           docker push teaminova/todo-list:${{ github.sha }}
 
