@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: todo-list-config
+  namespace: todo-namespace
+data:
+  SPRING_DATASOURCE_URL: jdbc:postgresql://postgres.todo-namespace.svc.cluster.local/todolist
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-config
+  namespace: todo-namespace
+data:
+  POSTGRES_DB: todolist
+
