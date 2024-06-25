@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: todolist.example.com
+  - host: todolist.213004.com
     http:
       paths:
       - path: /
